@@ -158,6 +158,12 @@ const CurrentSong = ({ image, title, artists }) => {
   
     const handleClick = () => {
       setIsPlaying(!isPlaying)
+    // if (isPlaying) {
+    //     audioRef.current.pause()
+    // }else{
+    //     audioRef.current.src= `/music/1/01.mp3`
+    // }
+    //     setIsPlaying(!isPlaying)
     }
   
     return (
