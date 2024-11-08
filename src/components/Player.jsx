@@ -20,30 +20,39 @@ export const Pause = ({ className }) => (
   
 
 
-const CurrentSong = ({ image, title, artists }) => {
-    return (
-      <div
-        className={`
-          flex items-center gap-5 relative
-          overflow-hidden
-        `}>
-          <picture className="w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
-            <img src={image} alt={title} />
-          </picture>
-  
-          <div className="flex flex-col">
-            <h3 className="font-semibold text-sm block">
-              {title}
-            </h3>
-            <span className="text-xs opacity-80">
-              {artists?.join(', ')}
-            </span>
+    const CurrentSong = ({ image, title, artists }) => {
+      return (
+        <div
+          className={`
+            flex items-center gap-5 relative
+            overflow-hidden
+          `}>
+          <div style={{ display: 'none' }}>
+            <picture className="w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
+              <img src={image} alt={title} />
+            </picture>
           </div>
-  
-      </div>
-    )
-  }
-  
+    
+          {artists && artists.length > 0 && (
+            <>
+              <picture className="w-16 h-16 bg-zinc-800 rounded-md shadow-lg overflow-hidden">
+                <img src={image} alt={title} />
+              </picture>
+              
+              <div className="flex flex-col ">
+                <h3 className="font-semibold text-sm block">
+                  {title}
+                </h3>
+                <span className="text-xs opacity-80">
+                  {artists.join(', ')}
+                </span>
+              </div>
+            </>
+          )}
+        </div>
+      )
+    }
+    
   const SongControl = ({ audio }) => {
     const [currentTime, setCurrentTime] = useState(0)
   
@@ -72,20 +81,20 @@ const CurrentSong = ({ image, title, artists }) => {
   
     return (
       <div className="flex gap-x-3 text-xs pt-2">
-        <span className="opacity-50 w-12 text-right">{formatTime(currentTime)}</span>
+        <span className="opacity-50 w-12 text-right mb-2">{formatTime(currentTime)}</span>
   
         <Slider
           value={[currentTime]}
           max={audio?.current?.duration ?? 0}
           min={0}
-          className="w-[600px]"
+          className="w-[600px] mb-2"
           onValueChange={(value) => {
             const [newCurrentTime] = value
             audio.current.currentTime = newCurrentTime
           }}
         />
   
-        <span className="opacity-50 w-12">
+        <span className="opacity-50 w-12 ">
           {duration ? formatTime(duration) : '0:00'}
         </span>
       </div>
@@ -158,12 +167,7 @@ const CurrentSong = ({ image, title, artists }) => {
   
     const handleClick = () => {
       setIsPlaying(!isPlaying)
-    // if (isPlaying) {
-    //     audioRef.current.pause()
-    // }else{
-    //     audioRef.current.src= `/music/1/01.mp3`
-    // }
-    //     setIsPlaying(!isPlaying)
+
     }
   
     return (
@@ -174,7 +178,7 @@ const CurrentSong = ({ image, title, artists }) => {
   
         <div className="grid place-content-center gap-4 flex-1">
           <div className="flex justify-center flex-col items-center">
-            <button className="bg-white rounded-full p-2" onClick={handleClick}>
+            <button className="bg-white rounded-full p-2 mt-3" onClick={handleClick}>
               {isPlaying ? <Pause /> : <Play />}
             </button>
             <SongControl audio={audioRef} />
