@@ -318,4 +318,4 @@ export const songs: Song[] = [
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
   },
-] 
+]
