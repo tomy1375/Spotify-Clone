@@ -13,7 +13,7 @@ export const playlists: Playlist[] = [
   {
     id: '1',
     albumId: 1,
-    title: "Welcome to Salchichas",
+    title: "Welcome to the Salchicha Island",
     color: colors.yellow,
     cover:
       "https://th.bing.com/th/id/OIG3.EWykQuCEPOPtmoQeRKNO?pid=ImgGn",
@@ -22,10 +22,10 @@ export const playlists: Playlist[] = [
   {
     id: '2',
     albumId: 2,
-    title: "Lo-Fi Chill Session",
+    title: "Lo-Fi Capibara Session",
     color: colors.green,
     cover:
-      "https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187",
+      "https://th.bing.com/th/id/OIG3.syqPKkl5bC73w.fTVeuN?pid=ImgGn",
     artists: ["Kupla", "Blue Fox"],
   },
   {
@@ -114,27 +114,27 @@ export const songs: Song[] = [
   {
     "id": 3,
     "albumId": 1,
-    "title": "Skyline Serenade",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
-    "artists": ["LoFi Dreamer"],
+    "title": "Perro Salchicha Gordo Bachicha",
+    "image": `https://th.bing.com/th/id/OIG1.UwTIsuXTsfN0BHufAUHK?w=1024&h=1024&rs=1&pid=ImgDetMain`,
+    "artists": ["Panchjovi"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:50"
   },
   {
     "id": 4,
     "albumId": 1,
-    "title": "Urban Echoes",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
-    "artists": ["LoFi Dreamer"],
+    "title": "Bongo el bachicha",
+    "image": `https://th.bing.com/th/id/OIG3.He4d9P5TtVYC3y7txUPZ?pid=ImgGn`,
+    "artists": ["Bongo"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:30"
   },
   {
     "id": 5,
     "albumId": 1,
-    "title": "Night's End",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
-    "artists": ["LoFi Dreamer"],
+    "title": "El sueño de Pancho",
+    "image": `https://th.bing.com/th/id/OIG1.Dp2dkK310mr7UVKg.ZLy?pid=ImgGn`,
+    "artists": ["The Panchos"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:20"
   },
@@ -142,7 +142,7 @@ export const songs: Song[] = [
     "id": 1,
     "albumId": 2,
     "title": "Silent Rain",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "image": `https://th.bing.com/th/id/OIG3.B9FygAffzfYjsBs9FdFG?pid=ImgGn`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:40"
@@ -150,8 +150,8 @@ export const songs: Song[] = [
   {
     "id": 2,
     "albumId": 2,
-    "title": "Lost Pages",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "title": "La capibara doctora",
+    "image": `https://th.bing.com/th/id/OIG3.GArdxQWq6PpjJsxhUT1G?pid=ImgGn`,
     "artists": ["Urban Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:20"
@@ -159,27 +159,27 @@ export const songs: Song[] = [
   {
     "id": 3,
     "albumId": 2,
-    "title": "Midnight Tales",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
-    "artists": ["Urban Nocturne"],
+    "title": "Capibara con brillo",
+    "image": `https://th.bing.com/th/id/OIG4.ObjEIn14C1hzYDkg8Ux6?pid=ImgGn`,
+    "artists": ["Capibara Nocturne"],
     "album": "Midnight Tales",
     "duration": "3:50"
   },
   {
     "id": 4,
     "albumId": 2,
-    "title": "City Lights",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
+    "title": "Capibara ceramista",
+    "image": `https://th.bing.com/th/id/OIG2.usIryILIRoeZkqm5lioo?w=1024&h=1024&rs=1&pid=ImgDetMain`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Capibara Nocturne",
     "duration": "3:30"
   },
   {
     "id": 5,
     "albumId": 2,
-    "title": "Night Drive",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/files/2amsynth-vinyl.png?v=1693312187`,
-    "artists": ["Urban Nocturne"],
+    "title": "Capi viajera",
+    "image": `https://th.bing.com/th/id/OIG4.0xkQzoi8hUQmom5cwqOk?pid=ImgGn`,
+    "artists": ["Capibara Nocturne"],
     "album": "Midnight Tales",
     "duration": "4:20"
   },
