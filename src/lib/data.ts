@@ -13,11 +13,11 @@ export const playlists: Playlist[] = [
   {
     id: '1',
     albumId: 1,
-    title: "Chill Lo-Fi Music",
+    title: "Welcome to Salchichas",
     color: colors.yellow,
     cover:
-      "https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353",
-    artists: ["NoSpirit", "Casiio"],
+      "https://th.bing.com/th/id/OIG3.EWykQuCEPOPtmoQeRKNO?pid=ImgGn",
+    artists: ["Salchicha-182", "Casiio"],
   },
   {
     id: '2',
@@ -96,18 +96,18 @@ export const songs: Song[] = [
   {
     "id": 1,
     "albumId": 1,
-    "title": "Moonlit Walk",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
-    "artists": ["LoFi Dreamer"],
+    "title": "El Amor de Bachicha",
+    "image": `https://th.bing.com/th/id/OIG3.EWykQuCEPOPtmoQeRKNO?pid=ImgGn`,
+    "artists": ["Pancho"],
     "album": "Chill Lo-Fi Music",
     "duration": "3:12"
   },
   {
     "id": 2,
     "albumId": 1,
-    "title": "Coffee Daze",
-    "image": `https://vinyl.lofirecords.com/cdn/shop/products/VINYL_MORNING_COFFEE_4-min.png?v=1680526353`,
-    "artists": ["LoFi Dreamer"],
+    "title": "Punkchicha",
+    "image": `https://th.bing.com/th/id/OIG2.UDpPJWWQ7_CmGGo103VA?pid=ImgGn`,
+    "artists": ["Panday"],
     "album": "Chill Lo-Fi Music",
     "duration": "4:07"
   },
