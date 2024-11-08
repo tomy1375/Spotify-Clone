@@ -78,7 +78,7 @@ const CurrentSong = ({ image, title, artists }) => {
           value={[currentTime]}
           max={audio?.current?.duration ?? 0}
           min={0}
-          className="w-[400px]"
+          className="w-[600px]"
           onValueChange={(value) => {
             const [newCurrentTime] = value
             audio.current.currentTime = newCurrentTime
@@ -183,8 +183,8 @@ const CurrentSong = ({ image, title, artists }) => {
   
         </div>
   
-        <div className="grid place-content-center">
-          <VolumeControl />
+        <div className="grid place-content-center pr-5 ">
+          <VolumeControl className="ml-auto mr-4" />
         </div>
       </div>
     )
