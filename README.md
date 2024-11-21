@@ -27,5 +27,5 @@ Este proyecto es un clon de Spotify, diseñado para replicar las funcionalidades
    npm install
 ```
 4.Inicia el servidor:
-```bash
+   ```bash
    npm start
