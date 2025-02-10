@@ -5,7 +5,7 @@
     let greeting = ""
 
     if(currentHour < 12) {
-        greeting = "Buenos Dias"
+        greeting = "Buen Dia"
     } else if( currentHour < 18){
         greeting = "Buenas Tardes"
     }else{
